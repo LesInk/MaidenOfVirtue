@@ -4,7 +4,7 @@
     <sid>3030663172247689</sid>
     <event-sheet>Event sheet 1</event-sheet>
     <size>
-        <width>2360</width>
+        <width>4720</width>
         <height>1024</height>
     </size>
     <margins>
@@ -13,13 +13,31 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
+        <layer name="PyramidBackground" sid="6078306461726784">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>0</transparent>
+            <parallax>
+                <x>0.5</x>
+                <y>0.5</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
         <layer name="Background" sid="9198179786932618">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
             <parallax>
-                <x>1</x>
-                <y>1</y>
+                <x>0</x>
+                <y>0</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
@@ -29,42 +47,46 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground" uid="8">
+                <instance type="House" uid="7">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>563</x>
-                        <y>348</y>
+                        <x>981</x>
+                        <y>775</y>
                         <z>0</z>
-                        <width>1267</width>
-                        <height>1024</height>
+                        <width>157</width>
+                        <height>155</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.41401273</hotspotX>
+                        <hotspotY>0.187096775</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground" uid="7">
+                <instance type="Sky" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32</x>
-                        <y>350</y>
+                        <x>320</x>
+                        <y>241</y>
                         <z>0</z>
-                        <width>1267</width>
-                        <height>1024</height>
+                        <width>643</width>
+                        <height>480</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -119,9 +141,9 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>605</x>
-                        <y>928</y>
-                        <z>0</z>
+                        <x>1632.278564453</x>
+                        <y>463.080474854</y>
+                        <z>0.000003815</z>
                         <width>32</width>
                         <height>32</height>
                         <depth>0</depth>
@@ -133,7 +155,7 @@
                 </instance>
                 <instance type="Ground" uid="2">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <behavior-instances>
@@ -146,10 +168,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>56</x>
-                        <y>937</y>
+                        <x>0</x>
+                        <y>896</y>
                         <z>0</z>
-                        <width>1744</width>
+                        <width>3800</width>
                         <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -160,7 +182,7 @@
                 </instance>
                 <instance type="Ground" uid="9">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <behavior-instances>
@@ -187,7 +209,7 @@
                 </instance>
                 <instance type="Ground" uid="10">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <behavior-instances>
@@ -214,7 +236,7 @@
                 </instance>
                 <instance type="Ground" uid="11">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <behavior-instances>
@@ -268,7 +290,7 @@
                 </instance>
                 <instance type="Ground" uid="13">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <behavior-instances>
@@ -363,8 +385,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1406</x>
-                        <y>924</y>
+                        <x>736</x>
+                        <y>896</y>
                         <z>0</z>
                         <width>33</width>
                         <height>33</height>
@@ -391,21 +413,21 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>550</x>
-                        <y>892</y>
-                        <z>0</z>
+                        <x>1627.801391602</x>
+                        <y>464.359100342</y>
+                        <z>0.000003815</z>
                         <width>32</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.3125</hotspotX>
-                        <hotspotY>1.015625</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.984375</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="EdgeMarker" uid="4">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -413,8 +435,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1512</x>
-                        <y>904</y>
+                        <x>832</x>
+                        <y>848</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -427,7 +449,7 @@
                 </instance>
                 <instance type="EdgeMarker" uid="5">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -435,14 +457,43 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1268</x>
-                        <y>901</y>
+                        <x>624</x>
+                        <y>848</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="StartPoint" uid="14">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1601</x>
+                        <y>891</y>
+                        <z>0</z>
+                        <width>901.728027344</width>
+                        <height>435.183990479</height>
+                        <depth>0</depth>
+                        <hotspotX>0.495967746</hotspotX>
+                        <hotspotY>0.983050823</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -489,6 +540,28 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="House2" uid="17">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2449</x>
+                        <y>773</y>
+                        <z>0</z>
+                        <width>157</width>
+                        <height>155</height>
+                        <depth>0</depth>
+                        <hotspotX>0.58598727</hotspotX>
+                        <hotspotY>0.187096775</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
