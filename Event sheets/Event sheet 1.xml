@@ -226,6 +226,14 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="5641903152576214">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3241341390707122" type="PlayerBox">
+                            <param id="0" name="Object">Door1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="7658064093686388" title="Enemy">
