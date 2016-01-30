@@ -122,8 +122,14 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9105835046211005" speed="5">
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="9105835046211005" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.984375" />
+                </animation>
+                <animation framecount="1" loop="0" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="2097944800792021" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="5258531084821634" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -138,11 +144,13 @@
         <object-type name="Timer" sid="5924957175343597">
             <plugin id="Text" />
         </object-type>
-        <object-type name="House" sid="8715977989996164">
+        <object-type name="House1" sid="8715977989996164">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8673139052843477" speed="5">
-                    <frame duration="1" hotspotX="0.414013" hotspotY="0.187097" />
+                    <frame duration="1" hotspotX="0.414013" hotspotY="0.187097">
+                        <image-point name="Imagepoint 1" x="0.433121" y="0.812903" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -194,6 +202,22 @@
                             <point x="1" y="0" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door1" sid="5904613434556211">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1622901087905347" speed="5">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door2" sid="6983685123072907">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8561327839264825" speed="5">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>
