@@ -3,9 +3,28 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Layout" sid="6712336538812785" static="0" type="number">0</variable>
+        <variable constant="0" name="UniqueMaiden" sid="937774790453946" static="0" type="number">1</variable>
+        <variable constant="0" name="Level" sid="9398130569834345" static="0" type="number">0</variable>
+        <variable constant="0" name="Door" sid="3742437355029457" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="7770514505944108" static="0" type="number">60</variable>
         <event-group description="" sid="1100472858344002" title="Player">
             <sub-events>
+                <event-block sid="9751097692114908">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7668269197113143" type="PlayerSprite">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="7655110884383598" type="System" />
+                        <action id="-2" name="Go to layout" sid="5128673831674262" type="System">
+                            <param id="0" name="Layout">Layout 1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="6088028864898541">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="3333061036728042" type="Keyboard">
@@ -109,16 +128,32 @@
             <sub-events>
                 <event-block sid="8671006185611102">
                     <conditions>
-                        <condition id="-2" name="On start of layout" sid="6228343828365595" type="System" />
+                        <condition id="-14" name="Compare variable" sid="6521027188167849" type="System">
+                            <param id="0" name="Variable">Layout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;House1Layout&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="6486087069122543" type="System">
-                            <param id="0" name="Variable">Timer</param>
-                            <param id="1" name="Value">60</param>
-                        </action>
                         <action id="-4" name="Set position to another object" sid="8134408898973443" type="PlayerBox">
-                            <param id="0" name="Object">StartPoint</param>
-                            <param id="1" name="Image point (optional)">1</param>
+                            <param id="0" name="Object">Exit1</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="350639031436036">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1410084769883939" type="System" />
+                        <condition id="-14" name="Compare variable" sid="1532171179219954" type="System">
+                            <param id="0" name="Variable">Door</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="2437006867196666" type="PlayerBox">
+                            <param id="0" name="Object">Start</param>
+                            <param id="1" name="Image point (optional)">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -146,6 +181,14 @@
                     </conditions>
                     <actions>
                         <action id="-26" name="Restart layout" sid="6103197005487963" type="System" />
+                        <action id="-9" name="Set value" sid="632576810092918" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">60</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5685989768313591" type="System">
+                            <param id="0" name="Variable">Door</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="396810187209135">
@@ -185,6 +228,12 @@
                         <action id="-26" name="Restart layout" sid="313736612008496" type="System" />
                     </actions>
                 </event-block>
+                <event-block sid="122369804440183">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="3003972830117567" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="844229778959323" title="Action">
@@ -222,6 +271,10 @@
                                     <param id="1" name="&apos;Off&apos; time">0.1</param>
                                     <param id="2" name="Duration">1.0</param>
                                 </action>
+                                <action id="-12" name="Subtract from" sid="5812304077412084" type="PlayerSprite">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -232,7 +285,75 @@
                             <param id="0" name="Object">Door1</param>
                         </condition>
                     </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="4007708142711091" type="System">
+                            <param id="0" name="Layout">&quot;House1Layout&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1917890792988257">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8737185935142701" type="PlayerBox">
+                            <param id="0" name="Object">Exit1</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="8961217258798903" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="3683357384284249" type="System">
+                            <param id="0" name="Layout">&quot;Layout1&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7207847943333452" type="System">
+                            <param id="0" name="Variable">Door</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1746855309523086">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4505682898836679" type="PlayerBox">
+                            <param id="0" name="Object">Maiden</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="5515392297880408" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
                     <actions />
+                    <sub-events>
+                        <event-block sid="8525604553693753">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="4276303759399841" type="Maiden">
+                                    <param id="0" name="Instance variable">Unique</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">UniqueMaiden</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="3298047367430819" type="PlayerSprite">
+                                    <param id="0" name="Instance variable">HoldingMaiden</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>temporary punishment, may remove</comment>
+                        <event-block sid="1351216123360704">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="6925831381141041" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Flash" id="0" name="Flash" sid="4198957714348349" type="PlayerSprite">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="8997859932755533" type="PlayerSprite">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -305,6 +426,27 @@
                         </action>
                         <action id="7" name="Set mirrored" sid="2289715313596814" type="Enemy">
                             <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7226461293023734" title="Maiden">
+            <sub-events>
+                <event-block sid="7195148762166121">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="1619526496659105" type="PlayerSprite">
+                            <param id="0" name="Instance variable">HoldingMaiden</param>
+                        </condition>
+                        <condition id="-1" name="Every tick" sid="400517698422328" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="2590410487810013" type="Maiden">
+                            <param id="0" name="Object">PlayerSprite</param>
+                            <param id="1" name="Image point (optional)">2</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="7829836956057874" type="Maiden">
+                            <param id="0" name="Angle">45</param>
                         </action>
                     </actions>
                 </event-block>
