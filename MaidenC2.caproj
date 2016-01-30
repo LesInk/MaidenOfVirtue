@@ -123,7 +123,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9105835046211005" speed="5">
-                    <frame duration="1" hotspotX="0.3125" hotspotY="1.01563" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984375" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -137,6 +137,65 @@
         </object-type>
         <object-type name="Timer" sid="5924957175343597">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="House" sid="8715977989996164">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8673139052843477" speed="5">
+                    <frame duration="1" hotspotX="0.414013" hotspotY="0.187097" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sky" sid="8708272503626532">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="5191552866089523" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StartPoint" sid="6739680373058837">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7577432416525816">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3589687420163975" speed="5">
+                    <frame duration="1" hotspotX="0.495968" hotspotY="0.983051">
+                        <image-point name="Imagepoint 1" x="0.53629" y="-0.0338983" />
+                        <collision-poly>
+                            <point x="0.415323" y="0.0508476" />
+                            <point x="0.471774" y="0" />
+                            <point x="0.624999" y="0.00423729" />
+                            <point x="0.641128" y="0.0762709" />
+                            <point x="1" y="0.991525" />
+                            <point x="0" y="0.991525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="House2" sid="4944439958108176">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6476649260377785" speed="5">
+                    <frame duration="1" hotspotX="0.585987" hotspotY="0.187097">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
