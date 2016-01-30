@@ -332,7 +332,7 @@
         <event-sheet>House1Event.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="20" />
+        <global-instance type="Keyboard" uid="62" />
     </global-instances>
     <sounds-folder />
     <music-folder />
