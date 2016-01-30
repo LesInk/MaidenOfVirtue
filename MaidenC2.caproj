@@ -225,6 +225,7 @@
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Level 1.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
