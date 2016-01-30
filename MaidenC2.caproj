@@ -138,6 +138,10 @@
         <object-type name="Timer" sid="5924957175343597">
             <plugin id="Text" />
         </object-type>
+        <object-type name="TiledBackground" sid="4107452327048719">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\templeback.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
