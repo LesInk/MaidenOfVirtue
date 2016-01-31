@@ -37,7 +37,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Level 1</first-layout>
+    <first-layout>Splash</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -651,6 +651,26 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Box" sid="672893587857022">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9538009538540168">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1903691931552787" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Obstacles\Box1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text3" sid="1781394663545632">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground" sid="8347907989881011">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Splash\GlobalGameJam2016.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -660,15 +680,17 @@
         <layout>HouseL1H1.xml</layout>
         <layout>HouseL1H2.xml</layout>
         <layout>HouseL1H3.xml</layout>
+        <layout>Splash.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>House1Event.xml</event-sheet>
+        <event-sheet>SplashEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="62" />
-        <global-instance type="Function" uid="74" />
-        <global-instance type="Audio" uid="96">
+        <global-instance type="Keyboard" uid="96" />
+        <global-instance type="Function" uid="122" />
+        <global-instance type="Audio" uid="123">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>

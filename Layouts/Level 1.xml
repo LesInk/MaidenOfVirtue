@@ -994,7 +994,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>328</x>
+                        <x>354</x>
                         <y>-384</y>
                         <z>0</z>
                         <width>62</width>
@@ -1256,6 +1256,33 @@
                         <depth>0</depth>
                         <hotspotX>0.50234741</hotspotX>
                         <hotspotY>1.00333333</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text3" uid="134">
+                    <properties>
+                        <text>Arrows / WASD = Move       Up / W = Jump      Down / S = Enter/Grab</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>153,255,153</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>11</x>
+                        <y>565</y>
+                        <z>0</z>
+                        <width>780</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
