@@ -10,6 +10,7 @@
     <unique-id>3phjf8c2bcezm</unique-id>
     <saved-with-version>22100</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -351,6 +352,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Function" sid="4262726091539062">
+            <plugin id="Function" />
+        </object-type>
         <object-type name="Sprite3" sid="6809567607422404">
             <plugin id="Sprite" />
             <animation-folder>
@@ -414,6 +418,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="62" />
+        <global-instance type="Function" uid="67" />
     </global-instances>
     <sounds-folder />
     <music-folder />
