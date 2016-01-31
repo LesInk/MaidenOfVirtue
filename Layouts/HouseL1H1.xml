@@ -255,7 +255,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="ExitL1H1" uid="107">
+                <instance type="ExitH1" uid="107">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -343,8 +343,8 @@
                         <width>28</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.502325594</hotspotX>
-                        <hotspotY>0.984686077</hotspotY>
+                        <hotspotX>0.344186038</hotspotX>
+                        <hotspotY>0.996937215</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
