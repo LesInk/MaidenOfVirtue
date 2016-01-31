@@ -129,21 +129,25 @@
                 <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="9105835046211005" speed="5">
                     <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
                         <image-point name="Imagepoint 1" x="0.813953" y="0.390505" />
+                        <image-point name="Imagepoint 2" x="0.362791" y="0.396631" />
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="2097944800792021" speed="5">
                     <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
-                        <image-point name="Imagepoint 1" x="0.813953" y="0.390505" />
+                        <image-point name="Imagepoint 1" x="-0.451163" y="-0.162328" />
+                        <image-point name="Imagepoint 2" x="0.334884" y="0.366003" />
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="5258531084821634" speed="5">
                     <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
-                        <image-point name="Imagepoint 1" x="0.813953" y="0.390505" />
+                        <image-point name="Imagepoint 1" x="-0.451163" y="-0.162328" />
+                        <image-point name="Imagepoint 2" x="0.334884" y="0.366003" />
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="HoldingMaiden" pingpong="0" repeatcount="1" repeatto="0" sid="8713377295933278" speed="5">
                     <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
-                        <image-point name="Imagepoint 1" x="0.813953" y="0.390505" />
+                        <image-point name="Imagepoint 1" x="-0.451163" y="-0.162328" />
+                        <image-point name="Imagepoint 2" x="0.334884" y="0.366003" />
                     </frame>
                 </animation>
             </animation-folder>
