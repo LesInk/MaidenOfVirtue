@@ -26,7 +26,7 @@
                     <actions>
                         <action id="-21" name="Reset global variables" sid="7655110884383598" type="System" />
                         <action id="-2" name="Go to layout" sid="5128673831674262" type="System">
-                            <param id="0" name="Layout">Layout 1</param>
+                            <param id="0" name="Layout">Level 1</param>
                         </action>
                         <action id="-9" name="Set value" sid="272847564020106" type="System">
                             <param id="0" name="Variable">HoldingMaiden</param>
@@ -507,6 +507,9 @@
                             <param id="0" name="Animation">&quot;Goal&quot; &amp; MaidenType</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="-16" name="Set opacity" sid="1349807427725187" type="Sky">
+                            <param id="0" name="Opacity">Timer</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="503834590494289">
@@ -547,9 +550,6 @@
                         <action id="-11" name="Subtract from" sid="4392154579732316" type="System">
                             <param id="0" name="Variable">Timer</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="93241690432662" type="Sky">
-                            <param id="0" name="Opacity">Timer</param>
                         </action>
                     </actions>
                 </event-block>
@@ -708,7 +708,7 @@
                         </event-block>
                         <event-block sid="6964293250921394">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="7549672829940798" type="PlayerBox">
+                                <condition id="1" name="Is overlapping another object" sid="7885868909136933" type="PlayerBox">
                                     <param id="0" name="Object">ExitH3</param>
                                 </condition>
                             </conditions>
@@ -1059,6 +1059,17 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="7322794041604594">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="6375991816463732" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4815609545104925" type="Maiden">
+                            <param id="0" name="Animation">&quot;Maiden&quot; &amp; Maiden.Type</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

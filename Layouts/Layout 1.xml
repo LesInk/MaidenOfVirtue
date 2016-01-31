@@ -602,6 +602,7 @@
                     </properties>
                     <instance-variables>
                         <Unique>1</Unique>
+                        <Type>0</Type>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Flash" />
