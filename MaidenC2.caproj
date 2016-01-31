@@ -409,12 +409,50 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="DoorL1H1" sid="7967213056691651">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518782914554937" speed="5">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitL1H1" sid="6345898235598453">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3218083910346778" speed="5">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorL1H2" sid="3614313718268134">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4205066063696941" speed="5">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorL1H3" sid="3819270960953935">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9638501403645029" speed="5">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="9661924013364533">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Level 1.xml</layout>
         <layout>Layout 1.xml</layout>
         <layout>House1Layout.xml</layout>
+        <layout>HouseL1H1.xml</layout>
+        <layout>HouseL1H2.xml</layout>
+        <layout>HouseL1H3.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>

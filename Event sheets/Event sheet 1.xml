@@ -10,7 +10,6 @@
         <variable constant="0" name="UniqueMaiden" sid="937774790453946" static="0" type="number">1</variable>
         <variable constant="0" name="Level" sid="9398130569834345" static="0" type="number">1</variable>
         <variable constant="0" name="MaidenType" sid="2929337755634785" static="0" type="number">0</variable>
-        <variable constant="0" name="ShakeGod" sid="8510310442328394" static="0" type="number">0</variable>
         <variable constant="0" name="Door" sid="3742437355029457" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="7770514505944108" static="0" type="number">60</variable>
         <event-group description="" sid="1100472858344002" title="Player">
@@ -362,9 +361,32 @@
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
                         <action id="-16" name="Wait" sid="1290239148352884" type="System">
-                            <param id="0" name="Seconds">1.0</param>
+                            <param id="0" name="Seconds">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="947407792828257" type="System">
+                            <param id="0" name="Variable">Door</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2242286273659049">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6554749935857084" type="System" />
+                        <condition id="-14" name="Compare variable" sid="5049674435387904" type="System">
+                            <param id="0" name="Variable">Door</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="6703812259125293" type="PlayerBox">
+                            <param id="0" name="Object">DoorL1H1</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5197607745888315" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9738986007501672" type="System">
                             <param id="0" name="Variable">Door</param>
                             <param id="1" name="Value">0</param>
                         </action>
@@ -387,18 +409,6 @@
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="8665750043769018">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="4029941950237525" type="System">
-                                    <param id="0" name="Variable">ShakeGod</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                        </event-block>
-                    </sub-events>
                 </event-block>
                 <event-block sid="503834590494289">
                     <conditions>
@@ -526,14 +536,6 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="5641903152576214">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="3241341390707122" type="PlayerBox">
-                            <param id="0" name="Object">Door1</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                </event-block>
                 <event-block any="1" sid="477183265194144">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="675364422605866" type="Keyboard">
@@ -557,32 +559,60 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="2331029741443653">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="5687574842831948" type="PlayerBox">
+                                    <param id="0" name="Object">Exit1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-25" name="Go to layout (by name)" sid="2102699896641047" type="System">
+                                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="204156923311928" type="System">
+                                    <param id="0" name="Variable">Door</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3556551355314304">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="2138373756508036" type="PlayerBox">
+                                    <param id="0" name="Object">ExitL1H1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-25" name="Go to layout (by name)" sid="4158234710983801" type="System">
+                                    <param id="0" name="Layout">&quot;Level 1&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9940630521626535" type="System">
+                                    <param id="0" name="Variable">Door</param>
+                                    <param id="1" name="Value">11</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
-                <event-block any="1" sid="1917890792988257">
+                <event-block any="1" sid="2484491774732221">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="8961217258798903" type="Keyboard">
+                        <condition id="0" name="On key pressed" sid="4345902404520265" type="Keyboard">
                             <param id="0" name="Key">83 (S)</param>
                         </condition>
-                        <condition id="0" name="On key pressed" sid="1711712540172081" type="Keyboard">
+                        <condition id="0" name="On key pressed" sid="4782837813005919" type="Keyboard">
                             <param id="0" name="Key">40 (Down arrow)</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="496132980268115">
+                        <event-block sid="6588087130634089">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="8737185935142701" type="PlayerBox">
-                                    <param id="0" name="Object">Exit1</param>
+                                <condition id="1" name="Is overlapping another object" sid="5185821519334109" type="PlayerBox">
+                                    <param id="0" name="Object">DoorL1H1</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-25" name="Go to layout (by name)" sid="3683357384284249" type="System">
-                                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="7207847943333452" type="System">
-                                    <param id="0" name="Variable">Door</param>
-                                    <param id="1" name="Value">1</param>
+                                <action id="-25" name="Go to layout (by name)" sid="3165697212880715" type="System">
+                                    <param id="0" name="Layout">&quot;HouseL1H1&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
