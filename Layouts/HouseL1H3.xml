@@ -603,7 +603,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="119">
+                <instance type="WANTS" uid="119">
                     <properties>
                         <text>WANTS</text>
                         <initial-visibility>Visible</initial-visibility>

@@ -435,7 +435,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="7193434994821324">
+        <object-type name="WANTS" sid="7193434994821324">
             <plugin id="Text" />
         </object-type>
         <object-type name="MaidenGoal" sid="2690388365349989">

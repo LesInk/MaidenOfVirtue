@@ -531,7 +531,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="116">
+                <instance type="WANTS" uid="116">
                     <properties>
                         <text>WANTS</text>
                         <initial-visibility>Visible</initial-visibility>

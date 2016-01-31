@@ -538,6 +538,32 @@
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="4207603294348268">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="8187924108837596" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set font color" sid="5114924091378111" type="WANTS">
+                                    <param id="0" name="Color">rgb(64 + 255 * (Timer % 2), 0, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6008136319170979">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="8941065320143337" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set font color" sid="295179521738412" type="WANTS">
+                                    <param id="0" name="Color">rgb(128, 128, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="503834590494289">
                     <conditions>
@@ -607,7 +633,7 @@
                 <event-block sid="8577045861605578">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="4132602770740546" type="System">
-                            <param id="0" name="Interval (seconds)">3</param>
+                            <param id="0" name="Interval (seconds)">0.5 + (Timer/20)</param>
                         </condition>
                     </conditions>
                     <actions>
