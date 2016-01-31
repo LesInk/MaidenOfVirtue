@@ -30,16 +30,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="6088028864898541">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="3333061036728042" type="Keyboard">
-                            <param id="0" name="Key">40 (Down arrow)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="12" name="Fall through" sid="199645411381513" type="PlayerBox" />
-                    </actions>
-                </event-block>
                 <event-block sid="9084086882584861">
                     <conditions>
                         <condition behavior="Platform" id="0" name="Is moving" sid="959016855858211" type="PlayerBox" />
@@ -526,29 +516,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="8617554041052155">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="1091838390941225" type="System" />
-                        <condition id="-14" name="Compare variable" sid="3913403857931041" type="System">
-                            <param id="0" name="Variable">Door</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">15</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set position to another object" sid="3790799665401429" type="PlayerBox">
-                            <param id="0" name="Object">DoorH5</param>
-                            <param id="1" name="Image point (optional)">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="7644144407758294" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="525354505794243" type="System">
-                            <param id="0" name="Variable">Door</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="6531018876993308">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="505776866135886" type="System" />
@@ -915,22 +882,6 @@
                                 <action id="-9" name="Set value" sid="9944154233040808" type="System">
                                     <param id="0" name="Variable">Door</param>
                                     <param id="1" name="Value">14</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="5797928759139478">
-                            <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="6213934762839364" type="PlayerBox">
-                                    <param id="0" name="Object">ExitH5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-25" name="Go to layout (by name)" sid="9369767288429049" type="System">
-                                    <param id="0" name="Layout">&quot;Level &quot; &amp; Level</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="4960908644447749" type="System">
-                                    <param id="0" name="Variable">Door</param>
-                                    <param id="1" name="Value">15</param>
                                 </action>
                             </actions>
                         </event-block>
