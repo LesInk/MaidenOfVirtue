@@ -114,8 +114,10 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7625719478551781" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.9375" />
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7625719478551781" speed="12">
+                    <frame duration="1" hotspotX="0.307692" hotspotY="1.00298" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\spearman1.png" />
+                    <frame duration="1" hotspotX="0.296703" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\spearman2.png" />
+                    <frame duration="1" hotspotX="0.211982" hotspotY="0.997067" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\spearman3.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -833,15 +835,26 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="LevelID1" sid="7788700188419415">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelID2" sid="1558740330446881">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
         <layout>Layout 1.xml</layout>
         <layout>House1Layout.xml</layout>
         <layout>HouseL1H1.xml</layout>
+        <layout>HouseL2H1.xml</layout>
         <layout>HouseL1H2.xml</layout>
+        <layout>HouseL2H2.xml</layout>
         <layout>HouseL1H3.xml</layout>
+        <layout>HouseL2H3.xml</layout>
+        <layout>HouseL2H4.xml</layout>
         <layout>Splash.xml</layout>
         <layout>Start.xml</layout>
     </layout-folder>
