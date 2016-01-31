@@ -245,6 +245,11 @@
         </object-type>
         <object-type name="Obstacle" sid="9331906881818907">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7584044378061356">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3813689347750209" speed="5">
                     <frame duration="1" hotspotX="0.461538" hotspotY="0.933333" />
@@ -298,8 +303,11 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="2262037230749326" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.984375" />
+                <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="2262037230749326" speed="5">
+                    <frame duration="0" hotspotX="0.502347" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Animations\Maiden\Maiden1\Maiden1.png" />
+                    <frame duration="0" hotspotX="0.502347" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Animations\Maiden\Maiden2\maiden21.png" />
+                    <frame duration="0" hotspotX="0.502347" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Animations\Maiden\Maiden3\maiden31.png" />
+                    <frame duration="0" hotspotX="0.502347" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Animations\Maiden\Maiden4\maiden41.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -340,6 +348,56 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4693074041566781" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="6809567607422404">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8352454659598199" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SunGod" sid="7073109782896398">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2853267152031193" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Animations\Sun God\SunGodcropped.png" />
+                </animation>
+                <animation framecount="9" loop="0" name="Shake" pingpong="0" repeatcount="1" repeatto="0" sid="8382982650164917" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Animations\Sun God\SunGodcropped.png" />
+                    <frame duration="1" hotspotX="0.500722" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Animations\Sun God\SunGodcroppedp10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Animations\Sun God\SunGodcropped.png" />
+                    <frame duration="1" hotspotX="0.500722" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.500722" hotspotY="0.5" />
+                    <frame duration="3" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.500722" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Animations\Sun God\SunGodcropped-10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="7193434994821324">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MaidenGoal" sid="2690388365349989">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Unique" sid="3382162285692907" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Goal0" pingpong="0" repeatcount="1" repeatto="0" sid="1024300682617608" speed="5">
+                    <frame duration="0" hotspotX="0.502347" hotspotY="1.00333" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Animations\Maiden\Maiden1\Maiden1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Goal1" pingpong="0" repeatcount="1" repeatto="0" sid="2108811898793657" speed="5">
+                    <frame duration="0" hotspotX="0.502347" hotspotY="1" />
+                </animation>
+                <animation framecount="1" loop="0" name="Goal2" pingpong="0" repeatcount="1" repeatto="0" sid="9039611095726198" speed="5">
+                    <frame duration="0" hotspotX="0.507042" hotspotY="1" />
+                </animation>
+                <animation framecount="1" loop="0" name="Goal3" pingpong="0" repeatcount="1" repeatto="0" sid="1608006310596833" speed="5">
+                    <frame duration="0" hotspotX="0.502347" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>

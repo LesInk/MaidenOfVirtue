@@ -58,6 +58,13 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -75,7 +82,7 @@
                 </instance>
                 <instance type="EdgeMarker" uid="50">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -97,7 +104,7 @@
                 </instance>
                 <instance type="EdgeMarker" uid="56">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -188,11 +195,11 @@
                         <x>598</x>
                         <y>834</y>
                         <z>0</z>
-                        <width>32</width>
+                        <width>28</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.984375</hotspotY>
+                        <hotspotX>0.50234741</hotspotX>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -245,7 +252,7 @@
             <instances>
                 <instance type="Start2" uid="60">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>

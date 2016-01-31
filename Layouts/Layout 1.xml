@@ -80,11 +80,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>320</x>
-                        <y>241</y>
+                        <x>408</x>
+                        <y>303.5</y>
                         <z>0</z>
-                        <width>643</width>
-                        <height>480</height>
+                        <width>819</width>
+                        <height>605</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -617,11 +617,11 @@
                         <x>-95</x>
                         <y>741</y>
                         <z>0</z>
-                        <width>32</width>
+                        <width>28</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.984375</hotspotY>
+                        <hotspotX>0.50234741</hotspotX>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
