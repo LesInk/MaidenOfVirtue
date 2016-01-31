@@ -449,7 +449,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>631</x>
-                        <y>397</y>
+                        <y>394</y>
                         <z>0</z>
                         <width>32</width>
                         <height>64</height>
@@ -492,11 +492,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>495</x>
-                        <y>384</y>
+                        <x>496</x>
+                        <y>358</y>
                         <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
+                        <width>53.065998077</width>
+                        <height>53.065998077</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -551,6 +551,28 @@
                         <depth>0</depth>
                         <hotspotX>0.461538464</hotspotX>
                         <hotspotY>0.933333337</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EdgeMarker" uid="157">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>376</x>
+                        <y>367</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
