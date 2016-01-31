@@ -671,6 +671,55 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Splash\GlobalGameJam2016.png" />
         </object-type>
+        <object-type name="Sprite3" sid="2932822045145913">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5406965487078562" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Headdress" sid="6193118013978066">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7732488163141935" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\hat3.png">
+                        <image-point name="Imagepoint 0" x="0.43932" y="0.3" />
+                        <image-point name="Imagepoint 1" x="0.334951" y="0.378571" />
+                        <image-point name="Imagepoint 2" x="0.225728" y="0.440476" />
+                        <image-point name="Imagepoint 3" x="0.456311" y="0.357143" />
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Health3" pingpong="0" repeatcount="1" repeatto="0" sid="7232117595657328" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Health2" pingpong="0" repeatcount="1" repeatto="0" sid="2208913922955648" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\hat2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Health1" pingpong="0" repeatcount="1" repeatto="0" sid="1131510251541813" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\hat1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Health0" pingpong="0" repeatcount="1" repeatto="0" sid="4108653621518951" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\hat0.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="2476808770677687">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3363213039696129" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Feather" sid="9023340163473465">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5177825814809942" speed="5">
+                    <frame duration="1" hotspotX="0.505495" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\hatfeather.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
