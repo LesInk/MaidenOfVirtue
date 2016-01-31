@@ -1062,34 +1062,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="5985805696528972" title="Testing">
-            <sub-events>
-                <event-block disabled="1" sid="8294776637885062">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="1389117252621921" type="PlayerBox">
-                            <param id="0" name="Object">Door2</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block disabled="1" sid="4285681244243784">
-                            <conditions>
-                                <condition id="-1" name="Compare X" sid="1533881798662747" type="PlayerBox">
-                                    <param id="0" name="Comparison">1</param>
-                                    <param id="1" name="X co-ordinate">Door2.xcord</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="2834468547077137" type="PlayerBox">
-                                    <param id="0" name="X">Door2.xcord</param>
-                                    <param id="1" name="Y">door2.ycord</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-block sid="5213888326740443">
             <conditions>
                 <condition id="-3" name="Is on-screen" sid="5525900759768749" type="Archer" />

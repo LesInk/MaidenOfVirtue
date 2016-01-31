@@ -594,6 +594,38 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Preist" sid="7798725918486583">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="health" sid="6033230129975357" type="number" />
+                <instance-variable name="action" sid="3533074102379669" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="9779312759852234">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5698023785073349" speed="5">
+                    <frame duration="1" hotspotX="0.546667" hotspotY="0.988" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Priest\priest1.png">
+                        <collision-poly>
+                            <point x="0.356667" y="0.214" />
+                            <point x="0.5" y="0.027" />
+                            <point x="0.555" y="0.267" />
+                            <point x="0.738333" y="0.5" />
+                            <point x="0.685" y="0.811" />
+                            <point x="0.5" y="0.771" />
+                            <point x="0.393333" y="0.764" />
+                            <point x="0.17" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.546667" hotspotY="0.988" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Priest\priest2.png" />
+                    <frame duration="1" hotspotX="0.546667" hotspotY="0.988" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Priest\priest3.png" />
+                    <frame duration="1" hotspotX="0.546667" hotspotY="0.988" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Priest\priest4.png" />
+                    <frame duration="1" hotspotX="0.546667" hotspotY="0.988" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Priest\priest5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
