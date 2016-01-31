@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -130,10 +131,19 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="2097944800792021" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984375">
+                        <image-point name="Imagepoint 1" x="0.8125" y="0.390625" />
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="5258531084821634" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984375">
+                        <image-point name="Imagepoint 1" x="0.8125" y="0.390625" />
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="HoldingMaiden" pingpong="0" repeatcount="1" repeatto="0" sid="8713377295933278" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984375">
+                        <image-point name="Imagepoint 1" x="0.8125" y="0.390625" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -283,16 +293,13 @@
                 <behavior-type name="Flash" sid="3516019287740325">
                     <behavior id="Flash" />
                 </behavior-type>
+                <behavior-type name="Bullet" sid="9590804905881333">
+                    <behavior id="Bullet" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="2262037230749326" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.984375" />
-                </animation>
-                <animation framecount="1" loop="0" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="5855014207534855" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="1" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="1783986291908997" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

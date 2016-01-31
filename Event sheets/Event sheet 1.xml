@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="HoldingMaiden" sid="1461308314770087" static="0" type="number">0</variable>
         <variable constant="0" name="Health" sid="6505219572500257" static="0" type="number">3</variable>
         <variable constant="0" name="Layout" sid="6712336538812785" static="0" type="number">0</variable>
         <variable constant="0" name="UniqueMaiden" sid="937774790453946" static="0" type="number">1</variable>
@@ -180,7 +181,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="5745353096375325" type="Timer">
-                            <param id="0" name="Text">Timer &amp; newline &amp; Health</param>
+                            <param id="0" name="Text">Timer &amp; newline &amp; Health &amp; newline &amp; HoldingMaiden</param>
                         </action>
                         <action id="-4" name="Set position to another object" sid="4282258575777206" type="PlayerSprite">
                             <param id="0" name="Object">PlayerBox</param>
@@ -355,50 +356,111 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="1746855309523086">
+                <event-block any="1" sid="1746855309523086">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="4505682898836679" type="PlayerBox">
-                            <param id="0" name="Object">Maiden</param>
+                        <condition id="0" name="On key pressed" sid="5515392297880408" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
                         </condition>
-                        <condition id="2" name="Key is down" sid="5515392297880408" type="Keyboard">
+                        <condition id="0" name="On key pressed" sid="366734926822191" type="Keyboard">
                             <param id="0" name="Key">40 (Down arrow)</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="8525604553693753">
+                        <event-block sid="2432820847585536">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="4276303759399841" type="Maiden">
-                                    <param id="0" name="Instance variable">Unique</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">UniqueMaiden</param>
+                                <condition id="1" name="Is overlapping another object" sid="4505682898836679" type="PlayerBox">
+                                    <param id="0" name="Object">Maiden</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="3298047367430819" type="PlayerSprite">
-                                    <param id="0" name="Instance variable">HoldingMaiden</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>temporary punishment, may remove</comment>
-                        <event-block sid="1351216123360704">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="6925831381141041" type="System" />
-                            </conditions>
-                            <actions>
-                                <action behavior="Flash" id="0" name="Flash" sid="4198957714348349" type="PlayerSprite">
-                                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
-                                    <param id="2" name="Duration">1.0</param>
-                                </action>
-                                <action id="-11" name="Subtract from" sid="8997859932755533" type="System">
-                                    <param id="0" name="Variable">Health</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="8525604553693753">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="4276303759399841" type="Maiden">
+                                            <param id="0" name="Instance variable">Unique</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">UniqueMaiden</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="3257177346431308" type="Maiden">
+                                            <param id="0" name="Instance variable">Unique</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="4127798636514401" type="System">
+                                            <param id="0" name="Variable">HoldingMaiden</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>temporary punishment, may remove</comment>
+                                <event-block sid="1351216123360704">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="6925831381141041" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Flash" id="0" name="Flash" sid="4198957714348349" type="PlayerSprite">
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                            <param id="2" name="Duration">1.0</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="8997859932755533" type="System">
+                                            <param id="0" name="Variable">Health</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="1216033654324145">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9800762643071482" type="PlayerSprite">
+                            <param id="0" name="Object">Start</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5797049100975914" type="System">
+                            <param id="0" name="Variable">HoldingMaiden</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3208502199027662" type="System">
+                            <param id="0" name="Variable">Layout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7036682897704961" type="System">
+                            <param id="0" name="Variable">HoldingMaiden</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="4914995890642677" type="PlayerSprite">
+                            <param id="0" name="Animation">&quot;Walking&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="6226302946398741" type="Maiden">
+                            <param id="0" name="Instance variable">Unique</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="3136125854832437" type="Maiden">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">7</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="4583089423536863" type="Maiden">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="347064944032685" type="Maiden">
+                            <param id="0" name="Speed">200</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="6348966281017921" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="6521568092778332" type="Maiden" />
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -480,8 +542,10 @@
             <sub-events>
                 <event-block sid="7195148762166121">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="1619526496659105" type="PlayerSprite">
-                            <param id="0" name="Instance variable">HoldingMaiden</param>
+                        <condition id="-14" name="Compare variable" sid="1619526496659105" type="System">
+                            <param id="0" name="Variable">HoldingMaiden</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="400517698422328" type="System" />
                     </conditions>
