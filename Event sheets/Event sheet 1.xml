@@ -1135,14 +1135,9 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-12" name="Subtract from" sid="5535369531306669" type="PlayerSprite">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action behavior="Flash" id="0" name="Flash" sid="4993123489122754" type="PlayerSprite">
-                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                    <param id="1" name="&apos;Off&apos; time">0.1</param>
-                    <param id="2" name="Duration">1.0</param>
+                <action id="0" name="Call function" sid="7751885279610166" type="Function">
+                    <param id="0" name="Name">&quot;Hurt&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
                 <action id="-9" name="Destroy" sid="9900520476231036" type="Arrow" />
             </actions>

@@ -154,7 +154,7 @@
                         <y>396</y>
                         <z>0</z>
                         <width>32</width>
-                        <height>32</height>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
@@ -245,8 +245,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-46</x>
-                        <y>330</y>
+                        <x>55</x>
+                        <y>393</y>
                         <z>0</z>
                         <width>28</width>
                         <height>64</height>
