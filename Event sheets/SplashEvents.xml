@@ -5,12 +5,12 @@
     <events>
         <event-block sid="4773306624432524">
             <conditions>
-                <condition id="-7" name="Compare time" sid="2274463339367257" type="System">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Time (seconds)">3.0</param>
-                </condition>
+                <condition id="-2" name="On start of layout" sid="2274463339367257" type="System" />
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="5494075297507662" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="1406478483825879" type="System">
                     <param id="0" name="Layout">Start</param>
                 </action>
