@@ -623,7 +623,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-    </object-folder>
         <object-type name="HouseBackground" sid="2646225026907889">
             <plugin id="Sprite" />
             <animation-folder>
