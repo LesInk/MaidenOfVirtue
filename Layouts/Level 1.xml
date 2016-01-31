@@ -1193,8 +1193,8 @@
             <instances>
                 <instance type="Timer" uid="38">
                     <properties>
-                        <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <text>Timer</text>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-29.6,400,0</font>
                         <color>255,51,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
