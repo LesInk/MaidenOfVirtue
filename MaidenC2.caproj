@@ -343,6 +343,34 @@
                 <animation framecount="1" loop="0" name="Maiden3" pingpong="0" repeatcount="1" repeatto="0" sid="3227233221564364" speed="5">
                     <frame duration="0" hotspotX="0.502347" hotspotY="1" />
                 </animation>
+                <animation framecount="5" loop="0" name="Slap0" pingpong="0" repeatcount="1" repeatto="0" sid="5475638810093506" speed="10">
+                    <frame duration="1" hotspotX="0.502347" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden1\Slap\Maiden1.png" />
+                    <frame duration="1" hotspotX="0.50173" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden1\Slap\Maiden2.png" />
+                    <frame duration="1" hotspotX="0.50173" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden1\Slap\Maiden3.png" />
+                    <frame duration="1" hotspotX="0.502415" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden1\Slap\Maiden4.png" />
+                    <frame duration="1" hotspotX="0.502347" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden1\Maiden1.png" />
+                </animation>
+                <animation framecount="5" loop="0" name="Slap1" pingpong="0" repeatcount="1" repeatto="0" sid="3632770678909519" speed="10">
+                    <frame duration="1" hotspotX="0.502347" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden2\Slap\maiden21.png" />
+                    <frame duration="1" hotspotX="0.50173" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden2\Slap\Maiden22.png" />
+                    <frame duration="1" hotspotX="0.50173" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden2\Slap\Maiden23.png" />
+                    <frame duration="1" hotspotX="0.502415" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden2\Slap\Maiden24.png" />
+                    <frame duration="1" hotspotX="0.502347" hotspotY="1" />
+                </animation>
+                <animation framecount="5" loop="0" name="Slap2" pingpong="0" repeatcount="1" repeatto="0" sid="9645682010242128" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden3\Slap\maiden31.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden3\Slap\Maiden32.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden3\Slap\Maiden33.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden3\Slap\Maiden34.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+                <animation framecount="5" loop="0" name="Slap3" pingpong="0" repeatcount="1" repeatto="0" sid="7075281050968048" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden4\Slap\maiden41.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden4\Slap\Maiden42.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden4\Slap\Maiden43.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden4\Slap\Maiden44.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Sprite2" sid="2489154172397821">
