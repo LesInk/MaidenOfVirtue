@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
@@ -129,34 +130,34 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="9105835046211005" speed="7">
                     <frame duration="1" hotspotX="0.344186" hotspotY="0.996937" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Player\Walking\walkingframe1.png">
-                        <image-point name="Imagepoint 1" x="1.6" y="0.653905" />
+                        <image-point name="Imagepoint 1" x="0.790698" y="0.361409" />
                     </frame>
                 </animation>
                 <animation framecount="2" loop="1" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="2097944800792021" speed="6">
                     <frame duration="1" hotspotX="0.41954" hotspotY="1.01163" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Player\Running\002.png">
-                        <image-point name="Imagepoint 1" x="1.44253" y="0.652616" />
+                        <image-point name="Imagepoint 1" x="0.793103" y="0.361919" />
                     </frame>
                     <frame duration="1" hotspotX="0.163743" hotspotY="1.00595">
-                        <image-point name="Imagepoint 1" x="1.44444" y="0.653274" />
+                        <image-point name="Imagepoint 1" x="0.789474" y="0.361607" />
                     </frame>
                 </animation>
                 <animation framecount="4" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="5258531084821634" speed="5">
                     <frame duration="1" hotspotX="0.344186" hotspotY="0.983155" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Player\Walking\walkingframe1.png">
-                        <image-point name="Imagepoint 1" x="1.64651" y="0.641654" />
+                        <image-point name="Imagepoint 1" x="0.790698" y="0.361409" />
                     </frame>
                     <frame duration="1" hotspotX="0.350877" hotspotY="0.994048" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Player\Walking\walkingframe2.png">
-                        <image-point name="Imagepoint 1" x="1.64912" y="0.641369" />
+                        <image-point name="Imagepoint 1" x="0.789474" y="0.361607" />
                     </frame>
                     <frame duration="1" hotspotX="0.12069" hotspotY="0.97093" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Player\Walking\walkingframe3.png">
-                        <image-point name="Imagepoint 1" x="1.64368" y="0.640988" />
+                        <image-point name="Imagepoint 1" x="0.793103" y="0.361919" />
                     </frame>
                     <frame duration="1" hotspotX="0.327485" hotspotY="0.970238">
-                        <image-point name="Imagepoint 1" x="1.64912" y="0.641369" />
+                        <image-point name="Imagepoint 1" x="0.789474" y="0.361607" />
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="HoldingMaiden" pingpong="0" repeatcount="1" repeatto="0" sid="8713377295933278" speed="5">
                     <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
-                        <image-point name="Imagepoint 1" x="1.70698" y="0.675345" />
+                        <image-point name="Imagepoint 1" x="0.790698" y="0.361409" />
                         <image-point name="Imagepoint 2" x="0.334884" y="0.366003" />
                     </frame>
                 </animation>
@@ -507,6 +508,122 @@
         <object-type name="Audio" sid="9305563316140518">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="Sprite4" sid="2223273590874007">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4242145648380151" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Archer" sid="3877193018496314">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8329364322610376" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\archer1.png">
+                        <collision-poly>
+                            <point x="0.816667" y="0.5" />
+                            <point x="0.691667" y="0.748869" />
+                            <point x="0.5" y="0.766968" />
+                            <point x="0.0722222" y="0.941176" />
+                            <point x="0.191667" y="0.5" />
+                            <point x="0.169444" y="0.138009" />
+                            <point x="0.5" y="0.0927602" />
+                            <point x="0.705556" y="0.239819" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Fire" pingpong="0" repeatcount="1" repeatto="0" sid="6909885117522361" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\archer2.png">
+                        <collision-poly>
+                            <point x="0.794444" y="0.5" />
+                            <point x="0.691667" y="0.748869" />
+                            <point x="0.5" y="0.771493" />
+                            <point x="0.0722222" y="0.941176" />
+                            <point x="0.252778" y="0.5" />
+                            <point x="0.227778" y="0.18552" />
+                            <point x="0.5" y="0.298643" />
+                            <point x="0.727778" y="0.221719" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="reload" pingpong="0" repeatcount="1" repeatto="0" sid="2836305643281802" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\archer3.png">
+                        <collision-poly>
+                            <point x="0.791667" y="0.5" />
+                            <point x="0.697222" y="0.753394" />
+                            <point x="0.5" y="0.773756" />
+                            <point x="0.0722222" y="0.941176" />
+                            <point x="0.216667" y="0.5" />
+                            <point x="0.177778" y="0.144796" />
+                            <point x="0.5" y="0.307692" />
+                            <point x="0.766667" y="0.190045" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="8105166854050508">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Arrow" sid="2619922704253013">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="3733939145401094">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2905640603586978" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\archerarrow.png">
+                        <collision-poly>
+                            <point x="0.957895" y="0.5" />
+                            <point x="0.910526" y="0.66" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.0894737" y="0.66" />
+                            <point x="0.00526315" y="0.5" />
+                            <point x="0.1" y="0.38" />
+                            <point x="0.5" y="0.32" />
+                            <point x="0.910526" y="0.34" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Preist" sid="7798725918486583">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="health" sid="6033230129975357" type="number" />
+                <instance-variable name="action" sid="3533074102379669" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="9779312759852234">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5698023785073349" speed="5">
+                    <frame duration="1" hotspotX="0.546667" hotspotY="0.988" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Priest\priest1.png">
+                        <collision-poly>
+                            <point x="0.356667" y="0.214" />
+                            <point x="0.5" y="0.027" />
+                            <point x="0.555" y="0.267" />
+                            <point x="0.738333" y="0.5" />
+                            <point x="0.685" y="0.811" />
+                            <point x="0.5" y="0.771" />
+                            <point x="0.393333" y="0.764" />
+                            <point x="0.17" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.546667" hotspotY="0.988" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Priest\priest2.png" />
+                    <frame duration="1" hotspotX="0.546667" hotspotY="0.988" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Priest\priest3.png" />
+                    <frame duration="1" hotspotX="0.546667" hotspotY="0.988" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Priest\priest4.png" />
+                    <frame duration="1" hotspotX="0.546667" hotspotY="0.988" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Priest\priest5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
         <object-type name="HouseBackground" sid="2646225026907889">
             <plugin id="Sprite" />
             <animation-folder>
