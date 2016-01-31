@@ -98,56 +98,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="play" uid="156">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Flash" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>413.523681641</x>
-                        <y>196.979553223</y>
-                        <z>0</z>
-                        <width>90.232635498</width>
-                        <height>26.116516113</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.51219511</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="credits" uid="157">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Flash" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>409.068450928</x>
-                        <y>238.794418335</y>
-                        <z>0</z>
-                        <width>132.097106934</width>
-                        <height>26.288284302</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502325594</hotspotX>
-                        <hotspotY>0.511627913</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
             </instances>
             <effects />
         </layer>

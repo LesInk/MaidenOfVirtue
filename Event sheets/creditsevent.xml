@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>creditsevent</name>
+    <events>
+        <event-block sid="3599789084188051">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="3155493212292548" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3239060721147934" type="System">
+                    <param id="0" name="Layout">Start</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
