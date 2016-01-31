@@ -1240,33 +1240,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="WANTS" uid="69">
-                    <properties>
-                        <text>WANTS</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-32,700,0</font>
-                        <color>255,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>356</x>
-                        <y>66</y>
-                        <z>0</z>
-                        <width>120.791229248</width>
-                        <height>52</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="MaidenGoal" uid="70">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -1337,6 +1310,33 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="WANTS" uid="69">
+                    <properties>
+                        <text>WANTS</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,700,0</font>
+                        <color>255,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>356</x>
+                        <y>66</y>
+                        <z>0</z>
+                        <width>120.791229248</width>
+                        <height>52</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
