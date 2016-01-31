@@ -522,6 +522,11 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <xcord>24</xcord>
+                        <ycord>0</ycord>
+                        <coords>&quot;24,21&quot;</coords>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -582,8 +587,8 @@
                         <width>28</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.502325594</hotspotX>
-                        <hotspotY>0.984686077</hotspotY>
+                        <hotspotX>0.344186038</hotspotX>
+                        <hotspotY>0.996937215</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

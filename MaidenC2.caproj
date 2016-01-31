@@ -126,23 +126,18 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="9105835046211005" speed="5">
-                    <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
-                        <image-point name="Imagepoint 1" x="0.813953" y="0.390505" />
-                        <image-point name="Imagepoint 2" x="0.362791" y="0.396631" />
-                    </frame>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="9105835046211005" speed="7">
+                    <frame duration="1" hotspotX="0.344186" hotspotY="0.996937" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Player\Walking\walkingframe1.png" />
                 </animation>
-                <animation framecount="1" loop="0" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="2097944800792021" speed="5">
-                    <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
-                        <image-point name="Imagepoint 1" x="-0.451163" y="-0.162328" />
-                        <image-point name="Imagepoint 2" x="0.334884" y="0.366003" />
-                    </frame>
+                <animation framecount="2" loop="1" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="2097944800792021" speed="6">
+                    <frame duration="1" hotspotX="0.41954" hotspotY="1.01163" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Player\Running\002.png" />
+                    <frame duration="1" hotspotX="0.163743" hotspotY="1.00595" />
                 </animation>
-                <animation framecount="1" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="5258531084821634" speed="5">
-                    <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
-                        <image-point name="Imagepoint 1" x="-0.451163" y="-0.162328" />
-                        <image-point name="Imagepoint 2" x="0.334884" y="0.366003" />
-                    </frame>
+                <animation framecount="4" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="5258531084821634" speed="5">
+                    <frame duration="1" hotspotX="0.344186" hotspotY="0.983155" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Player\Walking\walkingframe1.png" />
+                    <frame duration="1" hotspotX="0.350877" hotspotY="0.994048" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Player\Walking\walkingframe2.png" />
+                    <frame duration="1" hotspotX="0.12069" hotspotY="0.97093" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\Characters\Player\Walking\walkingframe3.png" />
+                    <frame duration="1" hotspotX="0.327485" hotspotY="0.970238" />
                 </animation>
                 <animation framecount="1" loop="0" name="HoldingMaiden" pingpong="0" repeatcount="1" repeatto="0" sid="8713377295933278" speed="5">
                     <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
@@ -234,6 +229,11 @@
         </object-type>
         <object-type name="Door2" sid="6983685123072907">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="xcord" sid="5060929766848328" type="number" />
+                <instance-variable name="ycord" sid="8684979228327658" type="number" />
+                <instance-variable name="coords" sid="1459855416971257" type="string" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8561327839264825" speed="5">
                     <frame duration="1" hotspotX="0.53125" hotspotY="1" />
@@ -422,7 +422,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="62" />
-        <global-instance type="Function" uid="67" />
+        <global-instance type="Function" uid="74" />
     </global-instances>
     <sounds-folder />
     <music-folder />

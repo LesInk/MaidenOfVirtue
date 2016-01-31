@@ -44,6 +44,130 @@
                         <action behavior="Platform" id="12" name="Fall through" sid="199645411381513" type="PlayerBox" />
                     </actions>
                 </event-block>
+                <event-block sid="9084086882584861">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="959016855858211" type="PlayerBox" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3794393498126993">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="7770753735300634" type="System">
+                                    <param id="0" name="Variable">HoldingMaiden</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="9636171403134324" type="PlayerSprite">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9656582771706282">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3972581329601705" type="System">
+                                    <param id="0" name="Variable">HoldingMaiden</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="1493742091961975" type="PlayerSprite">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4881436141044407">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="8611239934290667" type="PlayerBox" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8921788658374493" type="PlayerSprite">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1961133395055118">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="1135458167898208" type="System">
+                                    <param id="0" name="Variable">HoldingMaiden</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="1775640902619588" type="PlayerSprite">
+                                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6705354256032794">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6351928440282609" type="System">
+                                    <param id="0" name="Variable">HoldingMaiden</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="6078433124584758" type="PlayerSprite">
+                                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4640899667789402">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="8605397014932214" type="PlayerBox" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5353978162877579" type="PlayerSprite">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="5629569272316796">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4466572648184067" type="System">
+                                    <param id="0" name="Variable">HoldingMaiden</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="2136481055416405" type="PlayerSprite">
+                                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9685451972200047">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="9638418130246373" type="System">
+                                    <param id="0" name="Variable">HoldingMaiden</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="9916752113720443" type="PlayerSprite">
+                                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="1595972945148145">
                     <conditions>
                         <condition id="2" name="Key is down" sid="289982408174801" type="Keyboard">
@@ -702,6 +826,34 @@
                             <actions>
                                 <action id="-8" name="Set angle" sid="9709153162789102" type="Maiden">
                                     <param id="0" name="Angle">315</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5985805696528972" title="Testing">
+            <sub-events>
+                <event-block disabled="1" sid="8294776637885062">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1389117252621921" type="PlayerBox">
+                            <param id="0" name="Object">Door2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block disabled="1" sid="4285681244243784">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="1533881798662747" type="PlayerBox">
+                                    <param id="0" name="Comparison">1</param>
+                                    <param id="1" name="X co-ordinate">Door2.xcord</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="2834468547077137" type="PlayerBox">
+                                    <param id="0" name="X">Door2.xcord</param>
+                                    <param id="1" name="Y">door2.ycord</param>
                                 </action>
                             </actions>
                         </event-block>
