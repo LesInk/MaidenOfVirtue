@@ -392,9 +392,9 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="9315598895850145" type="Audio">
-                            <param id="0" name="Audio file">aztec</param>
+                            <param id="0" name="Audio file">aztec2</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-20</param>
+                            <param id="3" name="Volume">-12</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="6463139617491741" type="System">
