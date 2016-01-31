@@ -579,11 +579,11 @@
                         <x>1994</x>
                         <y>461</y>
                         <z>0</z>
-                        <width>215</width>
-                        <height>653</height>
+                        <width>28</width>
+                        <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.984375</hotspotY>
+                        <hotspotX>0.502325594</hotspotX>
+                        <hotspotY>0.984686077</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -602,7 +602,7 @@
                         <behavior-instance type="Flash" />
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>400</speed>
+                                <speed>0</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
@@ -614,8 +614,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-292</x>
-                        <y>899</y>
+                        <x>-95</x>
+                        <y>741</y>
                         <z>0</z>
                         <width>32</width>
                         <height>64</height>
@@ -641,6 +641,28 @@
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SunGodRaise" uid="66">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1992</x>
+                        <y>-127</y>
+                        <z>0</z>
+                        <width>250</width>
+                        <height>250</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

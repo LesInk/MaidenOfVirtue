@@ -267,7 +267,7 @@
                 </instance>
                 <instance type="PlayerBox" uid="63">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -331,8 +331,8 @@
                         <width>28</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.984375</hotspotY>
+                        <hotspotX>0.502325594</hotspotX>
+                        <hotspotY>0.984686077</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

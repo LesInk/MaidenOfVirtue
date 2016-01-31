@@ -450,8 +450,12 @@
                             <param id="1" name="&apos;Off&apos; time">0.1</param>
                             <param id="2" name="Duration">7</param>
                         </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="4583089423536863" type="Maiden">
-                            <param id="0" name="Angle">270</param>
+                        <action id="-22" name="Set angle toward position" sid="4583089423536863" type="Maiden">
+                            <param id="0" name="X">SunGodRaise.X</param>
+                            <param id="1" name="Y">sungodraise.Y</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="6189974506128784" type="System">
+                            <param id="0" name="Seconds">0.01</param>
                         </action>
                         <action behavior="Bullet" id="0" name="Set speed" sid="347064944032685" type="Maiden">
                             <param id="0" name="Speed">200</param>

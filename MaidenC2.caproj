@@ -126,23 +126,23 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="9105835046211005" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.984375">
-                        <image-point name="Imagepoint 1" x="0.8125" y="0.390625" />
+                    <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
+                        <image-point name="Imagepoint 1" x="0.813953" y="0.390505" />
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="2097944800792021" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.984375">
-                        <image-point name="Imagepoint 1" x="0.8125" y="0.390625" />
+                    <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
+                        <image-point name="Imagepoint 1" x="0.813953" y="0.390505" />
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="5258531084821634" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.984375">
-                        <image-point name="Imagepoint 1" x="0.8125" y="0.390625" />
+                    <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
+                        <image-point name="Imagepoint 1" x="0.813953" y="0.390505" />
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="HoldingMaiden" pingpong="0" repeatcount="1" repeatto="0" sid="8713377295933278" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.984375">
-                        <image-point name="Imagepoint 1" x="0.8125" y="0.390625" />
+                    <frame duration="1" hotspotX="0.502326" hotspotY="0.984686">
+                        <image-point name="Imagepoint 1" x="0.813953" y="0.390505" />
                     </frame>
                 </animation>
             </animation-folder>
@@ -332,6 +332,14 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5029207273933936" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\templeback_trans.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SunGodRaise" sid="3303711070790155">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4693074041566781" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
