@@ -786,6 +786,64 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Obstacle" uid="261">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1009</x>
+                        <y>383.933349609</y>
+                        <z>0</z>
+                        <width>26</width>
+                        <height>451</height>
+                        <depth>0</depth>
+                        <hotspotX>0.461538464</hotspotX>
+                        <hotspotY>0.933333337</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Obstacle" uid="263">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-12</x>
+                        <y>380.333343506</y>
+                        <z>0</z>
+                        <width>26</width>
+                        <height>445</height>
+                        <depth>0</depth>
+                        <hotspotX>0.461538464</hotspotX>
+                        <hotspotY>0.933333337</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

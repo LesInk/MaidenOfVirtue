@@ -13,6 +13,13 @@
                 <action id="-2" name="Go to layout" sid="6581513345777592" type="System">
                     <param id="0" name="Layout">Level 1</param>
                 </action>
+                <action id="33" name="Stop all" sid="3652945574663724" type="Audio" />
+                <action id="0" name="Play" sid="617486384771307" type="Audio">
+                    <param id="0" name="Audio file">aztec2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-12</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="4462330806446163">
@@ -24,6 +31,20 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="3782230054580638" type="System">
                     <param id="0" name="Layout">Credits</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6773404509901579">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4425248897671449" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="2717540574178298" type="Audio" />
+                <action id="0" name="Play" sid="3591627214305071" type="Audio">
+                    <param id="0" name="Audio file">aztec</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
