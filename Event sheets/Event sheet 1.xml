@@ -93,7 +93,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="7513544080943644" type="PlayerBox">
+                        <action id="7" name="Set mirrored" sid="7513544080943644" type="PlayerSprite">
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
@@ -108,7 +108,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="334042094582497" type="PlayerBox">
+                        <action id="7" name="Set mirrored" sid="334042094582497" type="PlayerSprite">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -153,7 +153,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-4" name="Set position to another object" sid="2437006867196666" type="PlayerBox">
+                        <action disabled="1" id="-4" name="Set position to another object" sid="2437006867196666" type="PlayerBox">
                             <param id="0" name="Object">Start</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>

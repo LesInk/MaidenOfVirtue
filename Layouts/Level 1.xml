@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>320</x>
-                        <y>241</y>
+                        <x>400</x>
+                        <y>300</y>
                         <z>0</z>
-                        <width>643</width>
-                        <height>480</height>
+                        <width>800</width>
+                        <height>600</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -80,10 +80,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2154</x>
-                        <y>551</y>
+                        <x>3569</x>
+                        <y>553</y>
                         <z>0</z>
-                        <width>2560</width>
+                        <width>-2560</width>
                         <height>2048</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -442,35 +442,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PlayerSprite" uid="31">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Health>3</Health>
-                        <HoldingMaiden>false</HoldingMaiden>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Flash" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>449</x>
-                        <y>309</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.984375</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="EdgeMarker" uid="32">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -554,8 +525,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2751</x>
-                        <y>815</y>
+                        <x>2938</x>
+                        <y>812</y>
                         <z>0</z>
                         <width>157</width>
                         <height>155</height>
@@ -568,7 +539,7 @@
                 </instance>
                 <instance type="Door2" uid="36">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -576,7 +547,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2750</x>
+                        <x>2937</x>
                         <y>941</y>
                         <z>0</z>
                         <width>60</width>
@@ -893,8 +864,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2662</x>
-                        <y>785</y>
+                        <x>2849</x>
+                        <y>782</y>
                         <z>0</z>
                         <width>150</width>
                         <height>41</height>
@@ -955,6 +926,35 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PlayerSprite" uid="31">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Health>3</Health>
+                        <HoldingMaiden>false</HoldingMaiden>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>452.096008301</x>
+                        <y>318.196990967</y>
+                        <z>0</z>
+                        <width>28</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.984375</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
