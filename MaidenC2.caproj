@@ -59,6 +59,9 @@
                 <behavior-type name="ScrollTo" sid="3408092574331781">
                     <behavior id="scrollto" />
                 </behavior-type>
+                <behavior-type name="Bullet" sid="668277951758364">
+                    <behavior id="Bullet" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4239211824628022" speed="5">
@@ -193,6 +196,9 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="7490641578623595" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -546,6 +552,9 @@
         </object-type>
         <object-type name="Archer" sid="3877193018496314">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="firing" sid="7621035043829027" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8329364322610376" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\archer1.png">
