@@ -3,11 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Maidens" sid="6921591426987151" static="0" type="number">1</variable>
         <variable constant="0" name="HoldingMaiden" sid="1461308314770087" static="0" type="number">0</variable>
         <variable constant="0" name="Health" sid="6505219572500257" static="0" type="number">3</variable>
         <variable constant="0" name="Layout" sid="6712336538812785" static="0" type="number">0</variable>
         <variable constant="0" name="UniqueMaiden" sid="937774790453946" static="0" type="number">1</variable>
-        <variable constant="0" name="Level" sid="9398130569834345" static="0" type="number">0</variable>
+        <variable constant="0" name="Level" sid="9398130569834345" static="0" type="number">1</variable>
         <variable constant="0" name="Door" sid="3742437355029457" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="7770514505944108" static="0" type="number">60</variable>
         <event-group description="" sid="1100472858344002" title="Player">
@@ -128,6 +129,63 @@
         </event-group>
         <event-group description="" sid="8226636444651405" title="Game">
             <sub-events>
+                <event-block sid="921193708356694">
+                    <conditions>
+                        <condition id="0" name="On function" sid="5450189914873259" type="Function">
+                            <param id="0" name="Name">&quot;MaidenCheck&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1764023759373655">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="7572364848592792" type="System">
+                                    <param id="0" name="Variable">Maidens</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="7297043660210638" type="System">
+                                    <param id="0" name="Variable">UniqueMaiden</param>
+                                    <param id="1" name="Value">round(random(1,Level))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8231010023069214">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="4215183771113196" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="4260334043492454" type="System">
+                                    <param id="0" name="Variable">Level</param>
+                                    <param id="1" name="Value">Level + 1</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="7450435217887757" type="System" />
+                                <action id="-9" name="Set value" sid="9971502348750447" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Value">60</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="3466026214276209" type="System">
+                                    <param id="0" name="Variable">Door</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="46023224439709" type="System">
+                                    <param id="0" name="Variable">Health</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1660724094369889" type="System">
+                                    <param id="0" name="Variable">UniqueMaiden</param>
+                                    <param id="1" name="Value">round(random(1,Level))</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="3240769371464135" type="System">
+                                    <param id="0" name="Variable">Maidens</param>
+                                    <param id="1" name="Value">Level</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="8671006185611102">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="6521027188167849" type="System">
@@ -173,6 +231,13 @@
                             <param id="0" name="Object">Door1</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
+                        <action id="-16" name="Wait" sid="1290239148352884" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="947407792828257" type="System">
+                            <param id="0" name="Variable">Door</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="6531018876993308">
@@ -181,7 +246,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="5745353096375325" type="Timer">
-                            <param id="0" name="Text">Timer &amp; newline &amp; Health &amp; newline &amp; HoldingMaiden</param>
+                            <param id="0" name="Text">Maidens &amp; &quot;maidens&quot; &amp; newline &amp; level &amp; &quot;level&quot; &amp; newline &amp; UniqueMaiden &amp; &quot;uniqueno&quot;</param>
                         </action>
                         <action id="-4" name="Set position to another object" sid="4282258575777206" type="PlayerSprite">
                             <param id="0" name="Object">PlayerBox</param>
@@ -206,6 +271,14 @@
                         <action id="-9" name="Set value" sid="5685989768313591" type="System">
                             <param id="0" name="Variable">Door</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7951656021682969" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2346622469142368" type="System">
+                            <param id="0" name="Variable">UniqueMaiden</param>
+                            <param id="1" name="Value">random(1,Level)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -395,7 +468,6 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <comment>temporary punishment, may remove</comment>
                                 <event-block sid="1351216123360704">
                                     <conditions>
                                         <condition id="-22" name="Else" sid="6925831381141041" type="System" />
@@ -464,6 +536,14 @@
                             <param id="0" name="Seconds">2</param>
                         </action>
                         <action id="-9" name="Destroy" sid="6521568092778332" type="Maiden" />
+                        <action id="-11" name="Subtract from" sid="3007739737258186" type="System">
+                            <param id="0" name="Variable">Maidens</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="5461787382669488" type="Function">
+                            <param id="0" name="Name">&quot;MaidenCheck&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
