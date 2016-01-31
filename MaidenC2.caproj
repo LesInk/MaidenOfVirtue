@@ -507,7 +507,7 @@
         <object-type name="Audio" sid="9305563316140518">
             <plugin id="Audio" />
         </object-type>
-        <object-type name="Sprite4" sid="2646225026907889">
+        <object-type name="HouseBackground" sid="2646225026907889">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8926394279183456" speed="5">
