@@ -182,8 +182,9 @@
         <object-type name="House1" sid="8715977989996164">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8673139052843477" speed="5">
-                    <frame duration="1" hotspotX="0.414013" hotspotY="0.187097">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8673139052843477" speed="0">
+                    <frame duration="1" hotspotX="0.414013" hotspotY="0.187097" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Backgrounds\single_house.png" />
+                    <frame duration="0" hotspotX="0.414013" hotspotY="0.187097">
                         <image-point name="Imagepoint 1" x="0.433121" y="0.812903" />
                     </frame>
                 </animation>
@@ -231,7 +232,15 @@
         <object-type name="House2" sid="4944439958108176">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6476649260377785" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6476649260377785" speed="0">
+                    <frame duration="1" hotspotX="0.585987" hotspotY="0.187097" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Backgrounds\single_house.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.585987" hotspotY="0.187097">
                         <collision-poly>
                             <point x="1" y="1" />

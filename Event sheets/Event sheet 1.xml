@@ -303,7 +303,7 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="7297043660210638" type="System">
                                     <param id="0" name="Variable">UniqueMaiden</param>
-                                    <param id="1" name="Value">round(random(1,Level))</param>
+                                    <param id="1" name="Value">-1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -333,7 +333,7 @@
                                 </action>
                                 <action id="-9" name="Set value" sid="1660724094369889" type="System">
                                     <param id="0" name="Variable">UniqueMaiden</param>
-                                    <param id="1" name="Value">round(random(1,Level))</param>
+                                    <param id="1" name="Value">-1</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="3240769371464135" type="System">
                                     <param id="0" name="Variable">Maidens</param>
