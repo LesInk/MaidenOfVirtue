@@ -859,7 +859,20 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="sfx2dooropen.m4a" />
+        <file name="sfx2dooropen.ogg" />
+        <file name="sfx3arrowshoot.m4a" />
+        <file name="sfx3arrowshoot.ogg" />
+        <file name="sfx5slap.m4a" />
+        <file name="sfx5slap.ogg" />
+        <file name="sfx4grunt.m4a" />
+        <file name="sfx4grunt.ogg" />
+        <file name="sfx9whapah.m4a" />
+        <file name="sfx9whapah.ogg" />
+        <file name="sfx11scream.m4a" />
+        <file name="sfx11scream.ogg" />
+    </sounds-folder>
     <music-folder>
         <file name="aztec.m4a" />
         <file name="aztec.ogg" />
