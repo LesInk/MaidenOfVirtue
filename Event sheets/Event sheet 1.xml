@@ -13,7 +13,6 @@
         <variable constant="0" name="MaidenType" sid="2929337755634785" static="0" type="number">0</variable>
         <variable constant="0" name="Door" sid="3742437355029457" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="7770514505944108" static="0" type="number">60</variable>
-        <comment>timer on level 1 was in 5.8 12.5 cord. size 96,48. will revert near completion</comment>
         <event-group description="" sid="1100472858344002" title="Player">
             <sub-events>
                 <event-block sid="9751097692114908">
@@ -559,7 +558,7 @@
                             <param id="0" name="Text">Timer &amp; newline &amp; Level</param>
                         </action>
                         <action id="4" name="Set animation" sid="1228914882561709" type="MaidenGoal">
-                            <param id="0" name="Animation">&quot;Goal&quot; &amp; UniqueMaiden</param>
+                            <param id="0" name="Animation">&quot;Goal&quot; &amp; MaidenType</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="9558116529371649" type="Headdress">
@@ -723,6 +722,9 @@
                     <param id="0" name="Animation">&quot;Animation2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="-15" name="Set visible" sid="729239349914123" type="WORDS">
+                    <param id="0" name="Visibility">1</param>
+                </action>
                 <action id="-16" name="Wait" sid="4749960913390626" type="System">
                     <param id="0" name="Seconds">5</param>
                 </action>
@@ -746,6 +748,12 @@
                 </action>
                 <action behavior="Platform" id="11" name="Set enabled" sid="3549576629471527" type="PlayerBox">
                     <param id="0" name="State">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6521768641066958" type="WORDS">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6511818578096842" type="WORDS">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
@@ -1033,16 +1041,14 @@
                                         <condition id="-22" name="Else" sid="6925831381141041" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Call function" sid="4026856442213834" type="Function">
-                                            <param id="0" name="Name">&quot;Hurt&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
+                                        <action behavior="Flash" id="0" name="Flash" sid="4198957714348349" type="PlayerSprite">
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                            <param id="2" name="Duration">1.0</param>
                                         </action>
-                                        <action id="-17" name="Move forward" sid="5055530158693639" type="PlayerBox">
-                                            <param id="0" name="Distance">-35</param>
-                                        </action>
-                                        <action id="4" name="Set animation" sid="5867306635404515" type="Maiden">
-                                            <param id="0" name="Animation">&quot;Slap&quot; &amp; Maiden.Type</param>
-                                            <param id="1" name="From">1</param>
+                                        <action id="-11" name="Subtract from" sid="8997859932755533" type="System">
+                                            <param id="0" name="Variable">Health</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1237,7 +1243,7 @@
                 <event-block sid="7322794041604594">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="6375991816463732" type="System" />
-                        <condition id="-14" name="Compare variable" sid="5635649637692867" type="System">
+                        <condition id="-14" name="Compare variable" sid="4872976064167816" type="System">
                             <param id="0" name="Variable">HoldingMaiden</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
@@ -1245,22 +1251,22 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="4815609545104925" type="Maiden">
-                            <param id="0" name="Animation">&quot;Maiden&quot; &amp; UniqueMaiden</param>
+                            <param id="0" name="Animation">&quot;Maiden&quot; &amp; Maiden.Type</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="3247961450159871">
+                <event-block sid="3013673509914547">
                     <conditions>
-                        <condition id="-2" name="On start of layout" sid="2225128576128553" type="System" />
-                        <condition id="-14" name="Compare variable" sid="2206989103100298" type="System">
+                        <condition id="-2" name="On start of layout" sid="9194292003998631" type="System" />
+                        <condition id="-14" name="Compare variable" sid="7684787324550224" type="System">
                             <param id="0" name="Variable">HoldingMaiden</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1107351949712063" type="Maiden">
+                        <action id="4" name="Set animation" sid="6289697473583783" type="Maiden">
                             <param id="0" name="Animation">&quot;Maiden&quot; &amp; Maiden.Type</param>
                             <param id="1" name="From">1</param>
                         </action>

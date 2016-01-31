@@ -349,34 +349,6 @@
                 <animation framecount="1" loop="0" name="Maiden3" pingpong="0" repeatcount="1" repeatto="0" sid="3227233221564364" speed="5">
                     <frame duration="0" hotspotX="0.502347" hotspotY="1" />
                 </animation>
-                <animation framecount="5" loop="0" name="Slap0" pingpong="0" repeatcount="1" repeatto="0" sid="5475638810093506" speed="10">
-                    <frame duration="1" hotspotX="0.502347" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden1\Slap\Maiden1.png" />
-                    <frame duration="1" hotspotX="0.50173" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden1\Slap\Maiden2.png" />
-                    <frame duration="1" hotspotX="0.50173" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden1\Slap\Maiden3.png" />
-                    <frame duration="1" hotspotX="0.502415" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden1\Slap\Maiden4.png" />
-                    <frame duration="1" hotspotX="0.502347" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden1\Maiden1.png" />
-                </animation>
-                <animation framecount="5" loop="0" name="Slap1" pingpong="0" repeatcount="1" repeatto="0" sid="3632770678909519" speed="10">
-                    <frame duration="1" hotspotX="0.502347" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden2\Slap\maiden21.png" />
-                    <frame duration="1" hotspotX="0.50173" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden2\Slap\Maiden22.png" />
-                    <frame duration="1" hotspotX="0.50173" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden2\Slap\Maiden23.png" />
-                    <frame duration="1" hotspotX="0.502415" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden2\Slap\Maiden24.png" />
-                    <frame duration="1" hotspotX="0.502347" hotspotY="1" />
-                </animation>
-                <animation framecount="5" loop="0" name="Slap2" pingpong="0" repeatcount="1" repeatto="0" sid="9645682010242128" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden3\Slap\maiden31.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden3\Slap\Maiden32.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden3\Slap\Maiden33.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden3\Slap\Maiden34.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                </animation>
-                <animation framecount="5" loop="0" name="Slap3" pingpong="0" repeatcount="1" repeatto="0" sid="7075281050968048" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden4\Slap\maiden41.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden4\Slap\Maiden42.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden4\Slap\Maiden43.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\lshields\GlobalGameJam\2016\MaidenOfVirtue\Assets\Characters\Madiens\Maiden4\Slap\Maiden44.png" />
-                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Sprite2" sid="2489154172397821">
@@ -757,6 +729,110 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="WORDS" sid="3889897552703498">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite6" sid="7309794809417817">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1922465158109478" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="495589811029912">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7691847271989558" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\title.png">
+                        <collision-poly>
+                            <point x="0.011194" y="0.142857" />
+                            <point x="0.5" y="0" />
+                            <point x="0.996269" y="0.047619" />
+                            <point x="0.996269" y="0.952381" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00373134" y="0.952381" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="634041520165575">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="flash" sid="243969499899029" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1186248497094742" speed="5">
+                    <frame duration="1" hotspotX="0.501497" hotspotY="0.503356" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\text4144-7.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="2288394119803649">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3855033230143969" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="9832599319427624">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite10" sid="8592571785917758">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9589364507595083" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="play" sid="5397052199562355">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="887432112422155">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6948386441082102" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\text4144-0.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.268293" />
+                            <point x="1" y="0" />
+                            <point x="0.894366" y="0.487805" />
+                            <point x="0.894366" y="0.634146" />
+                            <point x="0.5" y="0.97561" />
+                            <point x="0.00704225" y="0.97561" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="credits" sid="3847331133219922">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="3683775614451409">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3294474841029973" speed="5">
+                    <frame duration="1" hotspotX="0.502326" hotspotY="0.511628" original-source="C:\Users\Michael\git\MaidenOfVirtue\Assets\text4211.png">
+                        <collision-poly>
+                            <point x="0.027907" y="0.139535" />
+                            <point x="0.497674" y="0.0232558" />
+                            <point x="0.986046" y="0.0697674" />
+                            <point x="0.981395" y="0.906977" />
+                            <point x="0.497674" y="0.976744" />
+                            <point x="0.027907" y="0.860465" />
+                            <point x="0" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -767,11 +843,13 @@
         <layout>HouseL1H2.xml</layout>
         <layout>HouseL1H3.xml</layout>
         <layout>Splash.xml</layout>
+        <layout>Start.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>House1Event.xml</event-sheet>
         <event-sheet>SplashEvents.xml</event-sheet>
+        <event-sheet>startevent.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="96" />
