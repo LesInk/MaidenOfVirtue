@@ -1128,6 +1128,25 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="9451306720173166">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2433337426449361" type="Arrow">
+                    <param id="0" name="Object">PlayerBox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="5535369531306669" type="PlayerSprite">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="4993123489122754" type="PlayerSprite">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9900520476231036" type="Arrow" />
+            </actions>
+        </event-block>
         <event-group description="" sid="4627936222834551" title="Feather" />
         <event-block sid="3909005615407761">
             <conditions>
